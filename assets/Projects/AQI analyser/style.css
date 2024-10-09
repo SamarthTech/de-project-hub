@@ -1,0 +1,126 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #beffc4;
+}
+.root {
+	
+	width: 100%;
+	height: 100%;
+	color: rgb(39, 1, 1);
+	font-family: poppins;
+	min-height: 100vh;
+}
+
+.logo {
+	color: rgb(0, 107, 9);
+	background-color: white;
+	height:70px;
+	width:100%;
+}
+
+.logo2 {
+	color: #572300;
+	width: fit-content;
+	
+}
+.logo h3{
+	margin-left: 30px;
+	
+	padding-top: 20px;
+}
+.logo2 span{
+	
+	margin-left: 30px;
+	padding-top: 20px;
+}
+
+.heading {
+	text-align: center;
+	font-family: 'Fira Code', monospace;
+	font-size: 3rem;
+	margin-bottom: 60px;
+}
+
+.sub-heading {
+	margin: 20px 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+}
+
+.location-container {
+	margin: 40px 0;
+	justify-content: center;
+	display: flex;
+}
+
+.component-container {
+	margin: 40px 0;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.results {
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+.sub-heading {
+	padding-right:  1rem;
+}
+
+.loc-input {
+	border: 3px solid #269fe6;
+	font-size: 1rem;
+	padding: 8px;
+	border-radius: 6px;
+	margin: 10px;
+	width: 270px;
+}
+
+.loc-input:invalid {
+	border: 3px solid #d34545;
+}
+
+.search-btn {
+	padding: 10px 14px;
+	background-color: #00c410;
+	border: none;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 1rem;
+	border-radius: 4px;
+	color: #fff;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.air-quality, .arr, .air-quality-status {
+	font-size: 3rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.component-names {
+	display: inline-block;
+}
+
+.component-container div {
+	margin: 10px 0;
+}
+
+.component-val {
+	font-size: 1.2rem;
+	margin-left: 20px;
+}
+
+footer {
+	margin-top: 40px;
+	text-align: center;
+}
