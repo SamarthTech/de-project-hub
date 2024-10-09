@@ -1,7 +1,7 @@
 # De-Project Hub 🌐
 Welcome to **De-Project Hub** – a decentralized platform where developers can store, share, and manage their projects as an alternative to GitHub. This project aims to simplify repository management, contributing, and project ownership, all in a decentralized manner! 💡
 
-![Project Banner](./assets/your-image-here.png) <!-- Add your image here -->
+![Project Banner](https://img.freepik.com/free-vector/tiny-developers-programming-website-internet-platform-flat-vector-illustration-cartoon-programmers-near-screen-with-open-code-script-software-development-digital-technology-concept_74855-10168.jpg) <!-- Add your image here -->
 
 ## 🚀 Features
 1. **Decentralized Project Storage** – Projects are stored inside the `Projects` folder, enhancing transparency and ownership.
