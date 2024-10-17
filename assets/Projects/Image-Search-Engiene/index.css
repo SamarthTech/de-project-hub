@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 36rem;
+  margin-inline: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+h1 {
+  color: orangered;
+  margin: 0;
+  font-family: Caveat;
+}
+
+form {
+  display: flex;
+}
+
+.input {
+  width:250px;
+  border: 1px solid orangered;
+  height:40px;
+  border-radius: 0.25rem 0 0 0.25rem;
+  background-color: black;
+  color: orangered;
+  font-family: Caveat;
+  font-family: 2.2rem;
+}
+
+.input::placeholder {
+  color: orangered;
+  font-family: 2.2rem;
+}
+
+button {
+  width: 5rem;
+  background-color: #E2703A;
+  color: #FAFAFA;
+}
+
+input, button {
+  border: none;
+}
+
+:is(input, button):is(:focus, :active) {
+  border: none;
+  outline: none;
+}
+
+.search {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.images {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+img {
+  border-radius: 0.25rem;
+}
+
+.show-more {
+  padding: 0.75rem 1rem;
+  width: max-content;
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .images {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 87.5rem) {
+  .images {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
