@@ -1,0 +1,110 @@
+
+
+* {
+    margin: 0;
+}
+
+
+
+body {
+    background-color: black;;
+}
+
+main {
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.107);
+    box-shadow: 4px 4px 10px orangered;
+    
+}
+
+h1 {
+    color: orangered;
+    position: relative;
+    font-family: Great Vibes;
+    font-size: 2rem;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+
+}
+
+h2 {
+    text-align: center;
+    color: rgb(237, 110, 64);
+    font-family: Great Vibes;
+    flex: 1;
+}
+
+h3 {
+    align-self: flex-end;
+    color: orangered;
+    font-family: Great Vibes;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    min-width: 10rem;
+    background-color: orangered;
+    border-radius: 4rem;
+    font-family: Great Vibes;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.75px;
+}
+
+button:is(:hover, :active) {
+    border: none;
+    outline: none;
+}
+
+button:disabled {
+    filter: opacity(0.5);
+}
+
+#share-tweet {
+    border: 2px solid orangered;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: orangered;
+}
+
+#share-tweet svg {
+    height: 1.25rem;
+    fill: orangered;
+    align-items: center;
+}
+
+@media screen and (max-width:600px) {
+  main {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+}
