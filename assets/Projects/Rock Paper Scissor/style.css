@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align:  center;
+    height: fit-content;
+    
+}
+h1{
+    margin-bottom: 50px;
+}
+.choice-cont{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin-left: 370px;    
+}
+.choice img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px;
+    cursor: pointer;
+}
+.choice img :hover{
+    opacity: 0.5px;
+    background-color: yellow;
+
+}
+.scorecard-cont {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+font-size: 3rem;
+    
+}
+#result{
+    margin-top: 30px;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+h1{
+    font-size: 4rem;
+}
