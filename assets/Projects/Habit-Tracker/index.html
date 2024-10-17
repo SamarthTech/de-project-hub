@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Habit Tracker</h1>
+        <form id="habit-form">
+            <input type="text" id="habit-name" placeholder="Enter habit name" required>
+            <input type="number" id="habit-goal" placeholder="Enter daily goal" required min="1">
+            <button type="submit">Add Habit</button>
+        </form>
+        <div id="habits-list"></div>
+        <div id="progress-chart"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
