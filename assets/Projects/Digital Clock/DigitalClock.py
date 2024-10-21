@@ -1,20 +1,36 @@
-import tkinter as tk #to use tkinder module as tk in code
-from time import strftime
+import tkinter as tk
+import time
 
-root=tk.Tk()
-root.title("Digital Clock")
+class MobileStyleClock:
+    def __init__(self, root):
+        self.root = root
+        self.root.title('Gradient Style Clock')
+        self.canvas = tk.Canvas(root, width=400, height=200)
+        self.canvas.pack()
 
-def time():
-    string=strftime('%H:%M:%S %p \n %D')#to display time in Hours:Minutes:Seconds format in onme line and display the date in the next line
-    label.config(text=string)
-    label.after(1000,time)
+        self.gradient_bg()
+        
+        self.time_label = tk.Label(root, font=('Helvetica', 40, 'bold'), bg='black', fg='white')
+        self.canvas.create_window(200, 80, window=self.time_label)
 
-#setting font-sizeand style
-label=tk.Label(root,font=('calibri',50,'bold'),background='black',foreground='red')#set background color of clock as black and display time and date in red
+        self.date_label = tk.Label(root, font=('Helvetica', 16), bg='black', fg='white')
+        self.canvas.create_window(200, 130, window=self.date_label)
 
+        self.update_time()
 
-label.pack(anchor='center')
+    def gradient_bg(self):
+        for i in range(256):
+            color = f'#{i:02x}{(255-i):02x}ff'
+            self.canvas.create_line(0, i, 400, i, fill=color)
 
-time()
+    def update_time(self):
+        current_time = time.strftime('%I:%M:%S %p')
+        current_date = time.strftime('%A, %d %B %Y')
+        self.time_label.config(text=current_time)
+        self.date_label.config(text=current_date)
+        self.root.after(1000, self.update_time)
 
-root.mainloop()
+if __name__ == '__main__':
+    root = tk.Tk()
+    clock = MobileStyleClock(root)
+    root.mainloop()
