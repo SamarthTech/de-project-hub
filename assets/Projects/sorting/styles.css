@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+#arrayContainer {
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #ddd;
+}
+
+.bar {
+  background-color: #6c757d;
+  /* background-color: #0b0705; */
+  background-color: yellow;
+  border: 2px solid #0b0705;  
+  transition: background-color 0.2s ease;
+}
+
+.bar.active {
+  background-color: #007bff;
+}
+
+.controls {
+  margin-top: 20px;
+}

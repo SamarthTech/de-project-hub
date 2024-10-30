@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container text-center">
+    <h1>Sorting Visualizer</h1>
+    <div class="controls mb-3">
+      <label for="algorithm">Select Algorithm:</label>
+      <select id="algorithm" class="form-control" style="width: auto; display: inline-block;">
+        <option value="bubbleSort">Bubble Sort</option>
+        <option value="selectionSort">Selection Sort</option>
+        <option value="insertionSort">Insertion Sort</option>
+        <option value="mergeSort">Merge Sort</option>
+        <option value="quickSort">Quick Sort</option>
+      </select>
+      <button id="sortButton" class="btn btn-primary ml-3">Sort</button>
+      <button id="generateButton" class="btn btn-secondary ml-3">Generate Array</button>
+    </div>
+    <div id="arrayContainer" class="d-flex justify-content-center"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
