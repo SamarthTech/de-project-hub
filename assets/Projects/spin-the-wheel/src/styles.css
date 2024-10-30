@@ -1,0 +1,139 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Wheel Styles */
+#spin_the_wheel {
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.2), 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#wheel {
+  display: block;
+  transition: transform 6s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth spin transition */
+}
+
+#spin {
+  font: bold 1.5em 'Lato', sans-serif;
+  user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #1e3c72;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 0 8px #1e3c72, 0 0 15px 5px rgba(0, 0, 0, 0.6);
+  transition: 0.8s ease;
+}
+
+#spin:hover {
+  background: #1e3c72;
+  color: #fff;
+}
+
+#spin::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  border: 10px solid transparent;
+  border-bottom-color: currentColor;
+  border-top: none;
+}
+
+/* Result and Prompt Styles */
+.result-prompt {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.result {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1e3c72;
+}
+
+.prompt {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Dialog Box */
+#resultDialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+#resultDialog h2 {
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+#resultDialog button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #1e3c72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#resultDialog button:hover {
+  background-color: #163055;
+}
