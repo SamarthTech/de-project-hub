@@ -338,9 +338,9 @@ AIN` to analyze query performance.
 
 Feel free to connect with me on my other platforms for updates, queries, or collaborations!
 
-- GitHub: [Srijan Paul](https://github.com/srijanpaul)
-- LinkedIn: [Srijan Paul](https://www.linkedin.com/in/srijanpaul/)
-
+- **GitHub**: [paul-srijan](https://github.com/paul-srijan)
+- **LinkedIn**: [Srijan Paul](https://www.linkedin.com/in/srijan-paul-547354260/)
+- **Email**: iampaulsrijan@gmail.com
 ---
 
 ## License

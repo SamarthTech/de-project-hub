@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin the Wheel</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <div id="spin_the_wheel">
+          <canvas id="wheel" width="500" height="500"></canvas>
+          <div id="spin">SPIN</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="result-prompt">
+          <div class="result" id="result"></div>
+          <div class="prompt" id="prompt"></div>
+        </div>
+      </div>
+    </div>
+    <div id="resultDialog">
+      <h2>Result</h2>
+      <p id="dialogResult"></p>
+      <button onclick="closeDialog()">Close</button>
+    </div>
+    <script src="src/index.js" defer></script>
+  </body>
+</html>
