@@ -1,0 +1,197 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Font and Theme Variables */
+  :root {
+    --bg-color: #f0f2f5;
+    --text-color: #1f1f1f;
+    --panel-bg: #ffffff;
+    --button-bg: linear-gradient(135deg, #007acc, #005bb5);
+    --button-hover-bg: linear-gradient(135deg, #005bb5, #004080);
+    --button-text: #ffffff;
+    --border-color: #d1d5db;
+    --highlight-color: #007acc;
+    --shadow-color: rgba(0, 0, 0, 0.303);
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #fdfcfca3;
+    --panel-bg: #1e1e1e;
+    --button-bg: linear-gradient(135deg, #bb86fc, #7c4dff);
+    --button-hover-bg: linear-gradient(135deg, #7c4dff, #6200ea);
+    --button-text: #ffffff;
+    --border-color: #3a3a3a;
+    --highlight-color: #bb86fc;
+    --shadow-color: rgba(98, 96, 96, 0.604);
+  }
+
+  body.dark h1,
+  body.dark h3,
+  body.dark p {
+  background: linear-gradient(135deg, #bb86fc, #03dac6); /* Gradient colors */
+  -webkit-background-clip: text; /* Apply gradient to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+h1, h3, p {
+  color: var(--text-color); /* Use normal text color in light mode */
+}
+  /* General Styles */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--panel-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+  }
+  
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  
+  #theme-toggle {
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  #theme-toggle:hover {
+    background: var(--button-hover-bg);
+  }
+  
+  /* Editor Panels */
+  .editor {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--panel-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    overflow: hidden;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .panel h3 {
+    font-size: 18px;
+    font-weight: 600;
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  textarea {
+    background-color: var(--panel-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 14px;
+    font-size: 15px;
+    height: 250px;
+    resize: vertical;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  textarea:focus {
+    border-color: var(--highlight-color);
+    box-shadow: 0 0 6px var(--highlight-color);
+  }
+  
+  /* Run Button */
+  .run-button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    font-size: 16px;
+    padding: 12px 28px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    transition: background 0.3s, transform 0.1s ease;
+    margin: 20px 0;
+  }
+  
+  .run-button:hover {
+    background: var(--button-hover-bg);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  /* Output Section */
+.output {
+  width: 90%;
+  max-width: 1200px;
+  background-color: var(--panel-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.output h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--button-text);
+  background: var(--button-bg);
+  padding: 10px;
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 800px; /* Increased height for a longer output frame */
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media (max-width: 768px) {
+  .editor {
+    flex-direction: column; /* Stack panels on smaller screens */
+  }
+
+  .panel {
+    margin-bottom: 15px; /* Add space between stacked panels */
+  }
+
+  .run-button {
+    width: 50%; /* Full width on smaller screens */
+  }
+}
