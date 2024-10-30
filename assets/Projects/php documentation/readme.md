@@ -257,7 +257,11 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature-branch`).
 5. Create a pull request.
 
-Created by [Srijan Paul](https://github.com/paul-srijan)
+## connect with me
+
+- **GitHub**: [paul-srijan](https://github.com/paul-srijan)
+- **LinkedIn**: [Srijan Paul](https://www.linkedin.com/in/srijan-paul-547354260/)
+- **Email**: iampaulsrijan@gmail.com
 ---
 ---
 

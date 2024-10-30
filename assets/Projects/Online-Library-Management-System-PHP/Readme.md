@@ -181,6 +181,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 **Connect with me**:  
 [![GitHub Profile](https://img.shields.io/badge/GitHub-Profile-blue?logo=github)](https://github.com/paul-srijan)
+
+- **LinkedIn**: [Srijan Paul](https://www.linkedin.com/in/srijan-paul-547354260/)
+- **Email**: iampaulsrijan@gmail.com
 ---
 
 ---
