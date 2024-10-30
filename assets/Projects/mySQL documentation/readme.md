@@ -1,7 +1,7 @@
 
 # MySQL Documentation
 
-![MySQL Logo](https://cdn.freebiesupply.com/logos/thumbs/2x/kotlin-2-logo.png)
+![MySQL Logo](https://banner2.cleanpng.com/20180411/wre/avf0mauoj.webp)
 
 
 Welcome to the comprehensive MySQL documentation! This repository is designed to serve as a full-fledged guide for anyone working with MySQL, from beginners learning database basics to advanced users exploring optimization and complex queries.
