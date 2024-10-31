@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+    <p id="instructions">Type the paragraph below as quickly and accurately as you can.</p>
+    <div id="test-area">
+      <div id="text-display"></div>
+      <textarea id="text-input" placeholder="Start typing here..."></textarea>
+    </div>
+    <div id="results">
+      <p>Time: <span id="time">0</span> seconds</p>
+      <p>Words per Minute (WPM): <span id="wpm">0</span></p>
+      <p>Accuracy: <span id="accuracy">100</span>%</p>
+      <button class="new-test-btn" onclick="startTest()">New Test</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

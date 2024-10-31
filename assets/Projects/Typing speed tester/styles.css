@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%); /* Light gradient background */
+  color: #333;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background transition */
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background: linear-gradient(135deg, #121212 0%, #1c1c1c 100%); /* Dark gradient */
+  color: #f5f5f5; /* Light text color */
+}
+
+/* Header Styles */
+h1 {
+  color: #5d9bff; /* Bright blue for the heading */
+  font-size: 3rem; /* Larger font size */
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  letter-spacing: 1px; /* Slightly increase letter spacing */
+}
+
+/* Paragraph Display Styles */
+#text-display {
+  font-size: 1.5rem; /* Large font size */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid #5d9bff; /* Blue border */
+  background-color: #ffffff; /* White background */
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+  line-height: 1.6; /* Better line spacing */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth scaling and color transition */
+}
+
+body.dark #text-display {
+  background-color: #1c1c1c; /* Dark background for text display */
+  border-color: #4CAF50; /* Green border in dark mode */
+}
+
+/* Character Feedback */
+.correct {
+  color: #4CAF50; /* Green for correct characters */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+.incorrect {
+  color: #F44336; /* Red for incorrect characters */
+  font-weight: bold; /* Bold font for emphasis */
+}
+
+/* Text Input Styles */
+#text-input {
+  width: 90%;
+  max-width: 600px; /* Maximum width for larger screens */
+  padding: 15px;
+  font-size: 1.2rem; /* Slightly larger font size */
+  margin-bottom: 20px;
+  border: 2px solid #5d9bff; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth border color transition */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+body.dark #text-input {
+  background-color: #333; /* Dark background for input */
+  color: #f5f5f5; /* Light text color */
+  border-color: #4CAF50; /* Green border in dark mode */
+}
+
+#text-input:focus {
+  border-color: #4CAF50; /* Green when focused */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5); /* Green glow on focus */
+}
+
+/* Results Section Styles */
+#results {
+  font-size: 1.2rem; /* Consistent font size */
+  margin-top: 30px;
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border: 2px solid #ccc; /* Light grey border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+body.dark #results {
+  background-color: #2a2a2a; /* Dark background for results */
+  border-color: #555; /* Darker border in dark mode */
+}
+
+/* Results Paragraphs */
+#results p {
+  margin: 10px 0; /* Vertical spacing between results */
+  color: #666; /* Dark gray for better readability */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+body.dark #results p {
+  color: #ccc; /* Light gray for results text in dark mode */
+}
+
+#results p span {
+  font-weight: bold; /* Bold text for results */
+  color: #5d9bff; /* Highlight results */
+}
+
+#theme-toggle {
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+  background: var(--button-hover-bg);
+}
+.new-test-btn {
+  padding: 10px 20px; /* Increased padding for a better click area */
+  background-color: #5d9bff; /* Bright blue button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.1rem; /* Slightly larger font size */
+  margin-bottom: 10px; /* Spacing below the button */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  outline: none; /* Remove default outline */
+}
+
+/* Hover Effect for New Test Button */
+.new-test-btn:hover {
+  background-color: #2d598b; /* Darker blue on hover */
+  transform: translateY(-1px); /* Slight lift effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2.5rem; /* Responsive heading size */
+  }
+
+  #text-display {
+      font-size: 1.3rem; /* Responsive text display size */
+  }
+
+  #text-input {
+      font-size: 1rem; /* Responsive input size */
+  }
+
+  #results {
+      font-size: 1rem; /* Responsive results size */
+  }
+
+  .toggle-btn {
+      font-size: 0.9rem; /* Smaller button size on mobile */
+  }
+}
