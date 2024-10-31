@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Live Code Editor</h1>
+    <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </header>
+
+  <div class="editor">
+    <div class="panel">
+      <h3>HTML</h3>
+      <textarea id="html-code"></textarea>
+    </div>
+    <div class="panel">
+      <h3>CSS</h3>
+      <textarea id="css-code"></textarea>
+    </div>
+    <div class="panel">
+      <h3>JavaScript</h3>
+      <textarea id="js-code"></textarea>
+    </div>
+  </div>
+
+  <button class="run-button" onclick="runCode()">Run Code</button>
+
+  <div class="output">
+    <h3>Output:</h3>
+    <iframe id="output-frame"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
